@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: white;
+            height: 130px;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            margin-right: 70px;
+        }
+
+        nav ul li a {
+            list-style-type: none;
+            color: rgba(0, 0, 0, 0.606);
+            text-decoration: none;
+        }
+
+        nav ul li {
+            list-style-type: none;
+            font-family: monospace;
+            font-weight: 100;
+            font-size: 16px;
+            letter-spacing: 1px;
+        }
+
+        .navbar:hover {
+            color: rgb(67, 67, 230);
+        }
+
+        .des {
+            font-family: monospace;
+            font-weight: 100;
+            font-size: 17px;
+            color: rgba(0, 0, 0, 0.606);
+            cursor: pointer;
+            letter-spacing: 1px;
+            margin-top: 5px;
+        }
+
+        .name {
+            font-size: 23px;
+            font-family: Tahoma, sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .smallbox {
+            height: 17px;
+            width: 17px;
+            background-color: blue;
+            top: 0;
+        }
+
+        .namedes {
+            margin-left: 60px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .box {
+            height: 950px;
+            width: 600px;
+            background-color: rgb(230, 218, 206);
+        }
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 90px;
+        }
+
+        .boxsecondary {
+            position: sticky;
+            top: 0;
+            width: 375px;
+            height: 526.3px;
+            background-color: rgb(244 236 230);
+            position: relative;
+            left: 300px;
+            top: 300px;
+            border: none;
+            box-shadow: -4px 4px 15px black;
+        }
+
+        .mypic {
+            position: relative;
+            top: 50px;
+            left: 85px;
+            width: 205px;
+            height: 205px;
+            border-radius: 50%;
+        }
+        h1{
+            position: relative;
+            top: 80px;
+            left: 110px;
+            font-size: 23px;
+            font-family: Tahoma, sans-serif;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .line{
+            position: relative;
+            left: 126px;
+            top: 107px;
+            width: 120px;
+            height: 2px;
+            background-color: blue;
+        }
+        .SE{
+            left: 67px;
+            top: 156px;
+            position: relative;
+            font-family: monospace;
+            font-weight: 100;
+            font-size: 17px;
+            color: rgba(0, 0, 0, 0.606);
+            letter-spacing: 4px;
+            margin-top: 5px;
+        }
+        .socialmedialinks ul{
+            display: flex;
+            top: 203px;
+            position: relative;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+        }
+        .socialmedialinks ul li{
+            list-style-type: none;
+            cursor: pointer;
+        }
+        .socialmedialinks ul li a:active{
+            color: rgb(67, 67, 230);
+
+        }
+        p{
+            position: relative;
+            top: -290px;
+            right: -418px;
+        }
+        .resumebutton{
+            cursor: pointer;
+            border-radius: 25px;
+            top: -357px;
+            right: -433px;
+            border: none;
+            position: relative;
+            background-color: rgb(0 80 255);
+            color: aliceblue;
+            width: 130px;
+            height: 35px;
+        }
+        .resumebutton:hover{
+            transition: 0.5s;
+            background-color: white;
+            color: black;
+            border: 2px solid rgb(0 80 255);
+        }
+        .projectbutton:hover{
+            transition: 0.5s;
+            border: none;
+            background-color: rgb(0 80 255);
+            color: white;
+        }
+        .projectbutton{
+            cursor: pointer;
+            top: -357px;
+            right: -433px;
+            border-radius: 25px;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            width: 130px;
+            height: 35px;
+        }
+        .foot{
+            display: flex;
+            width: 100vw;
+            justify-content:space-between;
+            align-items: center;
+        }
+        td ul{
+            display: flex;
+
+        }
+        td ul li{
+            list-style-type: none;
+            padding: 0px 5px;
+        }
+        .reachme {
+            margin-left: 50px;
+        }
+        .reachme th,
+        .reachme td {
+            padding: 10px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="namedes">
+                <div class="smallbox"></div>
+                <span class="name">Aryan Singh</span>
+                <span class="des">/SOFTWARE ENGINEER</span>
+            </div>
+            <ul>
+                <li><a class="navbar" href="portfoliowebsite.html">ABOUT ME</a></li>
+                <li><a class="navbar" href="portfoliowebsiteresume.html">RESUME</a></li>
+                <li><a class="navbar" href="portfoliowebsiteproject.html">PROJECTS</a></li>
+                <li><a class="navbar" href="portfoliowebsitecontact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box">
+            <div class="boxsecondary">
+                <img class="mypic" src="Passport photo 2.jpg" alt="">
+                <div><h1>Aryan Singh</h1></div>
+                <div class="line"></div>
+                <div class="SE">SOFTWARE ENGINEER</div>
+                <div class="socialmedialinks">
+                    <ul>
+                        <li>
+                            <a class="social" href="https://www.facebook.com/aryan.singhrajput.3348" target="_blank">
+                              <img alt="Facebook" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png" style="width: 25px; height: 25px; object-fit: cover;">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="social" href="https://x.com/aryan4055433" target="_blank">
+                              <img alt="Twitter" src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png" style="width: 25px; height: 25px; object-fit: cover;">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="social" href="https://www.linkedin.com/in/aryan-singh-b08823229/" target="_blank">
+                              <img alt="LinkedIn" src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png" style="width: 25px; height: 25px; object-fit: cover;">
+                            </a>
+                          </li>
+                          <li>
+                            <a class="social" href="https://www.instagram.com/vortex_aryan/" target="_blank">
+                              <img alt="Instagram" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png" style="width: 25px; height: 25px; object-fit: cover;">
+                            </a>
+                          </li>
+                          
+                    </ul>
+                    <p class="Hello" style="font-size:100px;" font >Hello</p>
+                    <p class="intro" style="font-size:25px;" >Here's who I am&nbsp;&amp; what I do</p>
+                    <br><br><br><br><br>
+                    <span class="buttons">
+                        <a href="portfoliowebsiteresume.html"><button class="resumebutton">RESUME</button></a>&nbsp;
+                        <a href="portfoliowebsiteproject.html"><button class="projectbutton">PROJECTS</button></a>
+                    </span>
+                    <p class="aboutme" style="line-height:1.5em; font-size:17px;">I'm a Software Engineer , I am pursuing my Bachelor's degree in Computer Science, I am  also a Web Developer with quite good learning and listening skills. I seek opportunities to engage my skills to enhance my work's productivity.</p>
+                    <br><br>
+                    <p class="font_7 wixui-rich-text__text" style="line-height:1.5em; font-size:17px;">Thankyou for visiting my portfolio website hope you find this amazing.</p>
+                </div>
+
+                
+            </div>
+        </div>
+    </main>
+    <footer><div class="foot">&copy; 2025 By Aryan Singh 
+        <table class="reachme">
+            <tr class="info">
+                <th>Call</th>
+                <th>Write</th>
+                <th>Follow</th>
+            </tr>
+            <tr class="details">
+                <td>+91-6387750088</td>
+                <td>as4055433@gmail.com</td>
+                <td><ul>
+                    <li>
+                        <a class="social" href="https://www.facebook.com/aryan.singhrajput.3348" target="_blank">
+                          <img alt="Facebook" src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png" style="width: 20px; height: 20px; object-fit: cover;">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="social" href="https://x.com/aryan4055433" target="_blank">
+                          <img alt="Twitter" src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png" style="width: 20px; height: 20px; object-fit: cover;">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="social" href="https://www.linkedin.com/in/aryan-singh-b08823229/" target="_blank">
+                          <img alt="LinkedIn" src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png" style="width: 20px; height: 20px; object-fit: cover;">
+                        </a>
+                      </li>
+                      <li>
+                        <a class="social" href="https://www.instagram.com/vortex_aryan/" target="_blank">
+                          <img alt="Instagram" src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png" style="width: 20px; height: 20px; object-fit: cover;">
+                        </a>
+                    </li>                      
+                </ul></td>
+            </tr>
+        </table>
+    </div>
+        
+
+    </footer>
+</body>
+
+</html>
