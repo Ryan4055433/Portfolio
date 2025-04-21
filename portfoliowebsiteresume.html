@@ -9,37 +9,34 @@
     * {
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      overflow-x: hidden;
     }
 
     nav {
       background-color: white;
       height: 130px;
-      width: 100%;
+      width: 100vw;
       display: flex;
       justify-content: space-between;
       align-items: center;
       position: fixed;
       top: 0;
       z-index: 100;
-      padding: 0 20px;
-      flex-wrap: wrap;
     }
 
     nav ul {
       display: flex;
       gap: 25px;
-      list-style: none;
+      margin-right: 70px;
     }
 
     nav ul li a {
+      list-style-type: none;
       color: rgba(0, 0, 0, 0.606);
       text-decoration: none;
+    }
+
+    nav ul li {
+      list-style-type: none;
       font-family: monospace;
       font-weight: 100;
       font-size: 16px;
@@ -50,68 +47,230 @@
       color: rgb(67, 67, 230);
     }
 
-    .namedes {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .des {
+      font-family: monospace;
+      font-weight: 100;
+      font-size: 17px;
+      color: rgba(0, 0, 0, 0.606);
+      cursor: pointer;
+      letter-spacing: 1px;
+      margin-top: 5px;
+    }
+
+    .name {
+      font-size: 23px;
+      font-family: Tahoma, sans-serif;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
 
     .smallbox {
       height: 17px;
       width: 17px;
       background-color: blue;
+      top: 0;
     }
 
-    .name {
+    .namedes {
+      margin-left: 60px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      margin: 40px 90px;
+    }
+
+    .mypic {
+      position: relative;
+      top: 50px;
+      left: 85px;
+      width: 205px;
+      height: 205px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      position: relative;
+      top: 80px;
+      left: 110px;
       font-size: 23px;
+      font-family: Tahoma, sans-serif;
       font-weight: 700;
+      letter-spacing: 1px;
     }
 
-    .des {
+    .line {
+      position: relative;
+      left: 126px;
+      top: 107px;
+      width: 120px;
+      height: 2px;
+      background-color: blue;
+    }
+
+    .SE {
+      left: 67px;
+      top: 156px;
+      position: relative;
       font-family: monospace;
       font-weight: 100;
       font-size: 17px;
       color: rgba(0, 0, 0, 0.606);
-      letter-spacing: 1px;
+      letter-spacing: 4px;
+      margin-top: 5px;
     }
 
-    .mypic {
-      width: 205px;
-      height: 205px;
-      border-radius: 50%;
-      display: block;
-      margin: 150px auto 0;
+    .socialmedialinks ul {
+      display: flex;
+      top: 203px;
+      position: relative;
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(255, 255, 255);
+      padding: 15px;
     }
 
-    h1.headingresume {
-      text-align: center;
+    .socialmedialinks ul li {
+      list-style-type: none;
+      cursor: pointer;
+    }
+
+    .socialmedialinks ul li a:active {
+      color: rgb(67, 67, 230);
+    }
+
+    p {
+      position: relative;
+      top: -290px;
+      right: -418px;
+    }
+
+    .resumebutton {
+      cursor: pointer;
+      border-radius: 25px;
+      top: -357px;
+      right: -433px;
+      border: none;
+      position: relative;
+      background-color: rgb(0 80 255);
+      color: aliceblue;
+      width: 130px;
+      height: 35px;
+    }
+
+    .resumebutton:hover {
+      transition: 0.5s;
+      background-color: white;
+      color: black;
+      border: 2px solid rgb(0 80 255);
+    }
+
+    .projectbutton:hover {
+      transition: 0.5s;
+      border: none;
+      background-color: rgb(0 80 255);
+      color: white;
+    }
+
+    .projectbutton {
+      cursor: pointer;
+      top: -357px;
+      right: -433px;
+      border-radius: 25px;
+      position: relative;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      width: 130px;
+      height: 35px;
+    }
+
+    .foot {
+      display: flex;
+      width: 100vw;
+      justify-content: space-between;
+      align-items: center;
+      bottom: 0px;
+    }
+
+    td ul {
+      display: flex;
+    }
+
+    td ul li {
+      list-style-type: none;
+      padding: 0px 5px;
+    }
+
+    .reachme {
+      margin-left: 50px;
+    }
+
+    .reachme th,
+    .reachme td {
+      padding: 10px 25px;
+    }
+
+    main {
+      height: 180vh;
+      width: 100vw;
+      overflow-x: hidden;
+      background-color: rgb(230, 218, 206);
+    }
+
+    .headingresume {
       font-size: 35px;
-      margin-top: 30px;
+      color: black;
+      width: 300px;
+      height: 33.25px;
+      position: relative;
+      left: 631px;
+      top: 239px;
     }
 
     .smallbox1 {
       height: 19px;
       width: 19px;
       background-color: blue;
-      margin: 100px auto 10px;
+      position: relative;
+      top: 272px;
+      left: 598px;
     }
 
     .divkeupar {
-      text-align: center;
       font-size: 25px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      margin-top: 20px;
+      color: black;
+      position: relative;
+      top: 385px;
+      left: 386px;
     }
 
     .container1,
     .container2,
     .container3,
     .container4 {
+      height: auto;
       background-color: white;
-      max-width: 724px;
-      margin: 20px auto;
+      width: 724px;
+      position: relative;
+      top: 420px;
+      left: 364px;
+    }
+
+    .container-box {
       padding: 25px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      font-family: monospace;
+      font-size: 16px;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      letter-spacing: 1px;
     }
 
     .container-title {
@@ -122,138 +281,7 @@
     }
 
     .container-entry {
-      font-size: 16px;
-      color: #333;
       margin-left: 10px;
-    }
-
-    .resumebutton,
-    .projectbutton {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      border-radius: 25px;
-      border: none;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    .resumebutton {
-      background-color: rgb(0 80 255);
-      color: white;
-    }
-
-    .projectbutton {
-      background-color: white;
-      color: black;
-      border: 2px solid rgb(0 80 255);
-    }
-
-    .resumebutton:hover {
-      background-color: white;
-      color: black;
-      border: 2px solid rgb(0 80 255);
-    }
-
-    .projectbutton:hover {
-      background-color: rgb(0 80 255);
-      color: white;
-    }
-
-    footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 20px;
-      background-color: #f1f1f1;
-      margin-top: 40px;
-      text-align: center;
-    }
-
-    .reachme table {
-      margin-top: 15px;
-    }
-
-    .reachme th,
-    .reachme td {
-      padding: 10px 25px;
-    }
-
-    .reachme ul {
-      display: flex;
-      gap: 10px;
-      list-style: none;
-      justify-content: center;
-      padding: 0;
-    }
-
-    .reachme ul li img {
-      width: 20px;
-      height: 20px;
-      object-fit: cover;
-    }
-
-    main {
-      padding-top: 140px;
-      background-color: rgb(230, 218, 206);
-      min-height: 100vh;
-    }
-
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-      }
-
-      nav ul {
-        margin-top: 10px;
-        flex-wrap: wrap;
-        justify-content: center;
-        padding: 10px 0;
-      }
-
-      .mypic {
-        width: 150px;
-        height: 150px;
-        margin-top: 140px;
-      }
-
-      .headingresume,
-      .divkeupar,
-      .smallbox1 {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .container1,
-      .container2,
-      .container3,
-      .container4 {
-        width: 90%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .name {
-        font-size: 18px;
-      }
-
-      .des {
-        font-size: 14px;
-      }
-
-      nav ul li a {
-        font-size: 14px;
-      }
-
-      .container-title {
-        font-size: 16px;
-      }
-
-      .container-entry {
-        font-size: 14px;
-      }
     }
   </style>
 </head>
@@ -276,7 +304,6 @@
   </header>
 
   <main>
-    <img class="mypic" src="your-image.jpg" alt="Aryan's Picture">
     <div class="smallbox1"></div>
     <h1 class="headingresume">Resume</h1>
     <h2 class="divkeupar">Education</h2>
@@ -287,6 +314,7 @@
       <div class="container-entry">Board: CBSE</div>
       <div class="container-entry">Percentage: 88%</div>
     </div>
+    <br /><br />
 
     <div class="container2 container-box">
       <div class="container-title">Class 12th</div>
@@ -294,6 +322,7 @@
       <div class="container-entry">Board: CBSE</div>
       <div class="container-entry">Percentage: 87.6%</div>
     </div>
+    <br /><br />
 
     <div class="container3 container-box">
       <div class="container-title">Bachelor of Technology (B.Tech)</div>
@@ -301,11 +330,12 @@
       <div class="container-entry">Branch: Computer Science and Engineering</div>
       <div class="container-entry">Recent SEM SGPA: 8.67</div>
     </div>
+    <br /><br />
 
     <div class="container4 container-box">
       <div class="container-title">Technical Skills</div>
       <div class="container-entry">Languages: C, C++, Java, HTML, CSS, JavaScript</div>
-      <div class="container-entry">Tools: IntelliJ IDEA CE, VS Code</div>
+      <div class="container-entry">Tools: IntelliJ IDEA CE ,VS Code</div>
       <br />
       <div class="container-title">Communication Skills</div>
       <div class="container-entry">Public Speaking, Team Collaboration, Presentation, Verbal and Written English</div>
@@ -313,29 +343,55 @@
       <div class="container-title">Languages Known</div>
       <div class="container-entry">Hindi, English</div>
     </div>
+    <br /><br />
   </main>
 
   <footer>
-    <div>&copy; 2025 By Aryan Singh</div>
-    <table class="reachme">
-      <tr>
-        <th>Call</th>
-        <th>Write</th>
-        <th>Follow</th>
-      </tr>
-      <tr>
-        <td>+91-6387750088</td>
-        <td>as4055433@gmail.com</td>
-        <td>
-          <ul>
-            <li><a href="https://www.facebook.com/aryan.singhrajput.3348" target="_blank"><img src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png" alt="Facebook"></a></li>
-            <li><a href="https://x.com/aryan4055433" target="_blank"><img src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png" alt="Twitter"></a></li>
-            <li><a href="https://www.linkedin.com/in/aryan-singh-b08823229/" target="_blank"><img src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png" alt="LinkedIn"></a></li>
-            <li><a href="https://www.instagram.com/vortex_aryan/" target="_blank"><img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png" alt="Instagram"></a></li>
-          </ul>
-        </td>
-      </tr>
-    </table>
+    <div class="foot">&copy; 2025 By Aryan Singh
+      <table class="reachme">
+        <tr class="info">
+          <th>Call</th>
+          <th>Write</th>
+          <th>Follow</th>
+        </tr>
+        <tr class="details">
+          <td>+91-6387750088</td>
+          <td>as4055433@gmail.com</td>
+          <td>
+            <ul>
+              <li>
+                <a class="social" href="https://www.facebook.com/aryan.singhrajput.3348" target="_blank">
+                  <img alt="Facebook"
+                    src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png"
+                    style="width: 20px; height: 20px; object-fit: cover;">
+                </a>
+              </li>
+              <li>
+                <a class="social" href="https://x.com/aryan4055433" target="_blank">
+                  <img alt="Twitter"
+                    src="https://static.wixstatic.com/media/c7d035ba85f6486680c2facedecdcf4d.png"
+                    style="width: 20px; height: 20px; object-fit: cover;">
+                </a>
+              </li>
+              <li>
+                <a class="social" href="https://www.linkedin.com/in/aryan-singh-b08823229/" target="_blank">
+                  <img alt="LinkedIn"
+                    src="https://static.wixstatic.com/media/6ea5b4a88f0b4f91945b40499aa0af00.png"
+                    style="width: 20px; height: 20px; object-fit: cover;">
+                </a>
+              </li>
+              <li>
+                <a class="social" href="https://www.instagram.com/vortex_aryan/" target="_blank">
+                  <img alt="Instagram"
+                    src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png"
+                    style="width: 20px; height: 20px; object-fit: cover;">
+                </a>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
   </footer>
 </body>
 
