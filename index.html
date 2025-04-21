@@ -9,38 +9,34 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
         }
 
         nav {
             background-color: white;
-            width: 100%;
+            height: 130px;
+            width: 100vw;
             display: flex;
             justify-content: space-between;
             align-items: center;
             position: fixed;
             top: 0;
             z-index: 100;
-            padding: 20px;
-            flex-wrap: wrap;
         }
 
         nav ul {
             display: flex;
             gap: 25px;
-            list-style: none;
+            margin-right: 70px;
         }
 
         nav ul li a {
+            list-style-type: none;
             color: rgba(0, 0, 0, 0.606);
             text-decoration: none;
         }
 
         nav ul li {
+            list-style-type: none;
             font-family: monospace;
             font-weight: 100;
             font-size: 16px;
@@ -53,6 +49,7 @@
 
         .des {
             font-family: monospace;
+            font-weight: 100;
             font-size: 17px;
             color: rgba(0, 0, 0, 0.606);
             cursor: pointer;
@@ -71,182 +68,159 @@
             height: 17px;
             width: 17px;
             background-color: blue;
+            top: 0;
         }
 
         .namedes {
+            margin-left: 60px;
             display: flex;
             align-items: center;
             gap: 10px;
         }
 
         .box {
+            height: 950px;
+            width: 600px;
             background-color: rgb(230, 218, 206);
-            padding-top: 150px;
-            min-height: 100vh;
+        }
+
+        footer {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            margin: 50px 90px;
         }
 
         .boxsecondary {
-            background-color: rgb(244, 236, 230);
+            position: sticky;
+            top: 0;
+            width: 375px;
+            height: 526.3px;
+            background-color: rgb(244 236 230);
+            position: relative;
+            left: 300px;
+            top: 300px;
+            border: none;
             box-shadow: -4px 4px 15px black;
-            padding: 30px;
-            border-radius: 10px;
-            max-width: 600px;
-            width: 100%;
-            text-align: center;
         }
 
         .mypic {
+            position: relative;
+            top: 50px;
+            left: 85px;
             width: 205px;
             height: 205px;
             border-radius: 50%;
-            object-fit: cover;
         }
-
-        h1 {
+        h1{
+            position: relative;
+            top: 80px;
+            left: 110px;
             font-size: 23px;
             font-family: Tahoma, sans-serif;
             font-weight: 700;
             letter-spacing: 1px;
-            margin-top: 20px;
         }
-
-        .line {
+        .line{
+            position: relative;
+            left: 126px;
+            top: 107px;
             width: 120px;
             height: 2px;
             background-color: blue;
-            margin: 10px auto;
         }
-
-        .SE {
+        .SE{
+            left: 67px;
+            top: 156px;
+            position: relative;
             font-family: monospace;
             font-weight: 100;
             font-size: 17px;
             color: rgba(0, 0, 0, 0.606);
             letter-spacing: 4px;
-            margin-top: 10px;
+            margin-top: 5px;
         }
-
-        .socialmedialinks ul {
+        .socialmedialinks ul{
             display: flex;
+            top: 203px;
+            position: relative;
             gap: 20px;
             justify-content: center;
-            margin: 20px 0;
-            padding: 0;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
         }
-
-        .socialmedialinks ul li {
+        .socialmedialinks ul li{
             list-style-type: none;
-        }
-
-        .Hello {
-            font-size: 60px;
-        }
-
-        .intro {
-            font-size: 20px;
-            margin-top: 10px;
-        }
-
-        .buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 30px;
-            flex-wrap: wrap;
-        }
-
-        .resumebutton, .projectbutton {
-            border-radius: 25px;
-            border: none;
-            padding: 10px 20px;
-            font-size: 14px;
             cursor: pointer;
         }
+        .socialmedialinks ul li a:active{
+            color: rgb(67, 67, 230);
 
-        .resumebutton {
+        }
+        p{
+            position: relative;
+            top: -290px;
+            right: -418px;
+        }
+        .resumebutton{
+            cursor: pointer;
+            border-radius: 25px;
+            top: -357px;
+            right: -433px;
+            border: none;
+            position: relative;
             background-color: rgb(0 80 255);
             color: aliceblue;
+            width: 130px;
+            height: 35px;
         }
-
-        .resumebutton:hover {
+        .resumebutton:hover{
+            transition: 0.5s;
             background-color: white;
             color: black;
             border: 2px solid rgb(0 80 255);
         }
-
-        .projectbutton {
-            background-color: white;
-            color: black;
-            border: 2px solid rgb(0 80 255);
-        }
-
-        .projectbutton:hover {
+        .projectbutton:hover{
+            transition: 0.5s;
+            border: none;
             background-color: rgb(0 80 255);
             color: white;
         }
-
-        .aboutme, .font_7 {
-            margin-top: 20px;
-            font-size: 17px;
-            line-height: 1.5em;
+        .projectbutton{
+            cursor: pointer;
+            top: -357px;
+            right: -433px;
+            border-radius: 25px;
+            position: relative;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            width: 130px;
+            height: 35px;
         }
-
-        footer {
-            margin-top: 50px;
-            padding: 20px;
-            background-color: #f0f0f0;
-            text-align: center;
-        }
-
-        .reachme th, .reachme td {
-            padding: 5px 10px;
-        }
-
-        .foot ul {
+        .foot{
             display: flex;
-            justify-content: center;
-            gap: 10px;
-            padding: 0;
-            list-style: none;
+            width: 100vw;
+            justify-content:space-between;
+            align-items: center;
         }
+        td ul{
+            display: flex;
 
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            nav ul {
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            .mypic {
-                width: 150px;
-                height: 150px;
-            }
-
-            .Hello {
-                font-size: 45px;
-            }
-
-            .intro {
-                font-size: 18px;
-            }
-
-            .resumebutton, .projectbutton {
-                width: 100px;
-                font-size: 12px;
-            }
-
-            .aboutme, .font_7 {
-                font-size: 15px;
-            }
+        }
+        td ul li{
+            list-style-type: none;
+            padding: 0px 5px;
+        }
+        .reachme {
+            margin-left: 50px;
+        }
+        .reachme th,
+        .reachme td {
+            padding: 10px 25px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -349,6 +323,5 @@
 
     </footer>
 </body>
-
 
 </html>
